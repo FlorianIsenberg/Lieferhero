@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Lieferhero</title>
+</head>
+
+<body onload="render()">
+    <header>
+        <img src="img/restaurant_FILL0_wght400_GRAD0_opsz48.png" alt="">
+        <h1>
+            Lieferhero
+        </h1>
+    </header>
+    <div class="contentMenuBar">
+        <div class="headerImg">
+            <img src="img/pizza-g50c530d40_1920.jpg" alt="">
+        </div>
+        <div class="restaurantName">
+            <h2>New York Pizza</h2>
+            <p>echte Italinische Pizza</p>
+            <div class="rating">
+                <img src="img/star_FILL1_wght400_GRAD0_opsz48.png" alt="">
+                <img src="img/star_FILL1_wght400_GRAD0_opsz48.png" alt="">
+                <img src="img/star_FILL1_wght400_GRAD0_opsz48.png" alt="">
+                <img src="img/star_FILL1_wght400_GRAD0_opsz48.png" alt="">
+                <img src="img/star_half_FILL0_wght400_GRAD0_opsz48.png" alt="">
+                <span>658 Bewertungen</span>
+            </div>
+            <div class="orderInfo">
+                <div class="orderInfoMin">
+                    <img src="img/timer_FILL0_wght400_GRAD0_opsz48.png" alt="">
+                    <span> 15-20 Minuten</span>
+                </div>
+                <div class="orderInfoCost">
+                    <img src="img/local_shipping_FILL0_wght400_GRAD0_opsz48.png" alt="">
+                    <span>2,50€</span>
+                </div>
+                <div class="orderInfoTrans">
+                    <img src="img/shopping_bag_FILL0_wght400_GRAD0_opsz48.png" alt="">
+                    <span>kein Mindestbestellwert</span>
+                </div>
+            </div>
+        </div>
+        <div class="backgroundMenu">
+            <div class="headerMenu">
+                <h3>Speisekarte</h3>
+            </div>
+            <div class="menu">
+                <div class="contentMenu" id="contentMenu"></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="basket" id="openCart">
+        <div class="headerBasketEmpty">
+            <span>Warenkorb</span>
+        </div>
+        <div class="basketContentEmpty" id="basketContent">
+            <span>Fülle deinen Warenkorb.</span><br>
+            <span>Füge einige leckere Gerichte aus der Speisekarte hinzu und bestelle dein Essen.</span>
+        </div>
+        <div id="paycalc" class="calcPay">
+
+        </div>
+    </div>
+
+    <div class="basketRespon" onclick="openBasket()">
+        <div>
+            Bestellung <span id="basketRespon"></span>
+        </div>
+    </div>
+    <footer>
+    </footer>
+</body>
+
+</html>
